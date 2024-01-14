@@ -139,6 +139,12 @@ public class AddressResolver {
         return subjectHierarchies;
     }
 
+    /**
+     * Создает объект адреса
+     * @param parts массив со значениями полей из файла адресов
+     * @return объект адреса
+     * @throws ParseException
+     */
     private static Address createAddress(String[] parts) throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Address address = new Address();
